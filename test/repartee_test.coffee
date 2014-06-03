@@ -13,3 +13,8 @@ describe 'repartee', ->
     {meta, body} = repartee loadFile('basic.md')
     assert.deepEqual {title: 'Sample Post', date: '2014-06-03', tags: 'test'}, meta
     assert.equal "<p>This is a <em>sample</em> post. It’s pretty <strong>great</strong>.</p>\n", body
+
+  describe 'body parsing', ->
+    it 'replaces straight quotes with "smart" ones', ->
+      {body} = repartee loadFile('typography.md')
+      assert.equal "<p>I’d prefer “smart” quotes and apostrophies.</p>\n", body
