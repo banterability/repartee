@@ -21,5 +21,5 @@ into this:
     date: '2014-06-03'
   },
   body: '<p>I have a <em>crazy</em> idea.</p>'
-
+}
 ```
