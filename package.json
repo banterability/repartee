@@ -1,0 +1,30 @@
+{
+  "name": "repartee",
+  "version": "0.0.0",
+  "description": "Markdown + metadata parser",
+  "main": "index.coffee",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/banterability/repartee.git"
+  },
+  "author": "Jeff Long",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/banterability/repartee/issues"
+  },
+  "homepage": "https://github.com/banterability/repartee",
+  "devDependencies": {
+    "assertive": "^1.4.0",
+    "coffee-script": "^1.7.1",
+    "mocha": "^1.20.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "marked": "^0.3.2"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
