@@ -8,10 +8,10 @@ A Markdown + metadata parser
 Turn this:
 
 ```
-title: Just a thought
-date: 2014-06-03
+title: Heaven and Hell
+date: 1999-02-19
 
-I have a *crazy* idea.
+> Also, you'll find a pair of safety glasses and some earplugs under your seats. Please feel free to use them.
 ```
 
 into this:
@@ -19,9 +19,9 @@ into this:
 ```javascript
 {
   meta: {
-    title: 'Just a thought',
-    date: '2014-06-03'
+    title: 'Heaven and Hell',
+    date: '1999-02-19'
   },
-  body: '<p>I have a <em>crazy</em> idea.</p>'
+  body: '<blockquote>\n<p>Also, you’ll find a pair of safety glasses and some earplugs under your seats. Please feel free to use them.</p>\n</blockquote>\n'
 }
 ```
