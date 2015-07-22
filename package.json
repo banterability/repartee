@@ -15,7 +15,7 @@
   "homepage": "https://github.com/banterability/repartee",
   "devDependencies": {
     "assertive": "^1.4.0",
-    "coffee-script": "^1.7.1",
+    "babel": "^5.8.3",
     "mocha": "^1.20.0"
   },
   "directories": {

@@ -1,9 +1,9 @@
-COFFEE=./node_modules/coffee-script/bin/coffee
+BABEL=./node_modules/.bin/babel
 
 .PHONY: test
 
 build:
-	$(COFFEE) -bco lib src/index.coffee
+	$(BABEL) src/index.js -o lib/index.js
 
 test: build
 	npm test
