@@ -3,7 +3,7 @@ marked = require 'marked'
 parseMetadata = (metaBlob) ->
   metadata = {}
   metaBlob.split('\n').forEach (metaItem) ->
-    [key, value] = metaItem.split(':')
+    [_, key, value] = metaItem.match(/(.+?):(.*)/m)
     metadata[key] = value.trim()
   metadata
 
