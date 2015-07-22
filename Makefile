@@ -1,6 +1,9 @@
 COFFEE=./node_modules/coffee-script/bin/coffee
 
-build:
-	$(COFFEE) -co lib src/index.coffee
+.PHONY: test
 
-.PHONY: build
+build:
+	$(COFFEE) -bco lib src/index.coffee
+
+test: build
+	npm test
