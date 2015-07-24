@@ -1,7 +1,14 @@
 var marked = require('marked');
 
+function handleSpecialMetadata(metadata){
+  if (metadata.date){
+    metadata.date = new Date(metadata.date);
+  }
+  return metadata;
+}
+
 function parseMetadata(metaBlob) {
-  return metaBlob.split('\n').map(metaItem => {
+  var metadata = metaBlob.split('\n').map(metaItem => {
     let [, key, value] = metaItem.match(/(.+?):(.*)/m);
     return {key, value};
   }).reduce((result, item) => {
@@ -9,6 +16,7 @@ function parseMetadata(metaBlob) {
     result[key] = value.trim();
     return result;
   }, {});
+  return handleSpecialMetadata(metadata);
 };
 
 function parseBody(bodyBlob) {
