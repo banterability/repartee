@@ -31,4 +31,5 @@ into this:
 Some metadata keys have special behavior:
 
 | key    | behavior |
+| ------ | -------- |
 | `date` | Transforms a string that can be parsed by the `Date` constructor into a native Date. |
