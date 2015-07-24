@@ -20,7 +20,7 @@ into this:
 {
   meta: {
     title: 'Heaven and Hell',
-    date: '1999-02-19'
+    date: 'Thu Feb 18 1999 18:00:00 GMT-0600 (CST)'
   },
   body: '<blockquote>\n<p>Also, you’ll find a pair of safety glasses and some earplugs under your seats. Please feel free to use them.</p>\n</blockquote>\n'
 }
