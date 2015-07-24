@@ -25,6 +25,7 @@ describe('repartee', () => {
 
     it('converts "date" to native object', () => {
       var {meta} = repartee(loadFile('metadata.md'));
+      assert.equal('[object Date]', toString.call(meta.date));
       assert.deepEqual(new Date('2015-07-24 15:30:02'), meta.date);
     });
   });
