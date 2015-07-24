@@ -26,7 +26,7 @@ describe('repartee', () => {
   describe('body parsing', () => {
     it('replaces straight quotes with "smart" ones', () => {
       var {body} = repartee(loadFile('typography.md'));
-      assert.equal("<p>I’d prefer “smart” quotes and apostrophies.</p>\n", body);
+      assert.equal("<p>I’d prefer “smart” quotes and apostrophes.</p>\n", body);
     });
   });
 });
