@@ -25,3 +25,10 @@ into this:
   body: '<blockquote>\n<p>Also, you’ll find a pair of safety glasses and some earplugs under your seats. Please feel free to use them.</p>\n</blockquote>\n'
 }
 ```
+
+### Metadata
+
+Some metadata keys have special behavior:
+
+| key    | behavior |
+| `date` | Transforms a string that can be parsed by the `Date` constructor into a native Date. |
